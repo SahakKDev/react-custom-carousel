@@ -1,0 +1,50 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  grid-gap: 10px;
+}
+
+.right {
+  justify-self: right;
+}
+
+.center {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.selectContainer select {
+  background-color: #343131;
+  color: #ededed;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selectContainer label {
+  color: #fff;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #ccc;
+  color: #ededed;
+  background-color: #343131;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+.selectContainer select:hover {
+  background-color: #ededed;
+  color: #343131;
+}
